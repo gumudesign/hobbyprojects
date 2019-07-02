@@ -61,7 +61,7 @@
 
     <div class="container">
       <h1>未出貨列表 | GUMU </h1>
-      <p><a href="order_ship.html">全覽</a></p>
+      <p><a href="order_all.html">全覽</a></p>
       <div class="row js-append-card">
         <!-- append Card -->
       </div>
@@ -87,19 +87,22 @@
             item.amount = d[i].gsx$amount.$t;
             item.thumbnail = "https://i.imgur.com/g9CKuRu.png";
             if (item.amount == 1){
-            	item.thumbnail = "https://i.imgur.com/ehImacl.png";
+              item.thumbnail = "https://i.imgur.com/ehImacl.png";
             }
             if (item.amount == 2){
-            	item.thumbnail = "https://i.imgur.com/b1zvjHE.png";
+              item.thumbnail = "https://i.imgur.com/b1zvjHE.png";
             }
-            if (item.amount == 3){
-            	item.thumbnail = "https://i.imgur.com/LoCfhYc.png";
+            if (item.amount == "1card"){
+              item.thumbnail = "https://i.imgur.com/h1JPKi5.png";
             }
             if (item.amount == 4){
-            	item.thumbnail = "https://i.imgur.com/RmpaA9o.png";
+              item.thumbnail = "https://i.imgur.com/RmpaA9o.png";
             }
             if (item.amount == 9){
-            	item.thumbnail = "https://i.imgur.com/sZCiasM.png";
+              item.thumbnail = "https://i.imgur.com/sZCiasM.png";
+            }
+            if (item.amount == 10){
+              item.thumbnail = "https://i.imgur.com/YP8brly.png";
             }
             items.push(item);
           }
